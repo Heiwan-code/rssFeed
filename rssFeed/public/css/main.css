@@ -1,0 +1,92 @@
+/* Titles,text,etc */
+.navbar-brand, h1, h2, h3, h4, h5, p, a {
+  font-family: 'Spartan';
+}
+
+.article-title {
+  margin: 13px 0 8px 0;
+  font-size: 1.275rem;
+  color: #2e84ed;
+}
+
+.pageTitle, .navbar-brand {
+  color: #2e84ed !important;
+  text-transform: uppercase;
+}
+
+.navbar-brand {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* Containers&Seperators */
+.card {
+  margin: 21px;
+}
+
+.keyword-box {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #2e84ed;
+  padding: 5px 13px;
+  margin: 3px;
+  border-radius: 5px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.keyword-box:hover {
+  background-color: rgba(46, 132, 237, 0.9);
+  color: #fff;
+  cursor: pointer;
+}
+
+.article-box {
+  border-bottom: 1px solid #2e84ed;
+}
+
+.article-box h4 {
+  font-size: 1.1rem;
+  margin-bottom: 13px;
+}
+
+.article-box .articles-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article-box .articles-footer .date, .article-box .articles-footer .author {
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+  color: #81919f;
+}
+
+.seperator {
+  margin: 21px 0;
+}
+/*# sourceMappingURL=main.css.map */
