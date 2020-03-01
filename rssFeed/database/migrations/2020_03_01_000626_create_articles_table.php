@@ -18,7 +18,6 @@ class CreateArticlesTable extends Migration
             $table->string('updated');
             $table->text('title');
             $table->string('author');
-            $table->string('author-email');
             $table->mediumText('summary');
             $table->timestamps();
         });

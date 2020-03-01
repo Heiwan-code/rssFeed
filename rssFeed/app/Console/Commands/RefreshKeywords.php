@@ -58,7 +58,7 @@ class RefreshKeywords extends Command
         foreach($xml->entry as $entry) {
             $titleWords = explode(' ', $entry->title);
             
-            DB::insert('insert into articles (updated, title, author, author-email, summary) values (?, ?, ?, ?, ?)', [$entry->updated, $entry->title, $entry->author->name, $entry->author->email, $entry->summary]);
+            DB::insert('insert into articles (updated, title, author, summary) values (?, ?, ?, ?)', [$entry->updated, $entry->title, $entry->author->name, $entry->summary]);
             foreach($titleWords as $word) {
                 if (preg_match("/[a-z0-9]/", $word) && !preg_match("/\d|<|>/", $word)) {
 
